@@ -1,0 +1,130 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Trivia Game</title>
+       
+        <script src="https://code.jquery.com/jquery-3.3.1.js"
+          integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+          crossorigin="anonymous"></script>
+          <link href="https://fonts.googleapis.com/css?family=Barriecito&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+       
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    </head>   
+    <body>     
+        <div class="page-header mb-0">
+              <div class="col-lg-6 bg-dark rounded border border-dark">
+              <p>You Swayze?...</p>
+             </div> 
+          </div>   
+       
+        <div class="col-lg-6 bg-secondary rounded border border-dark"> 
+      <div class="container pt-3">
+         
+        <div id="startContainer">
+ 
+                    <p>These are famous Patrick Swayze quotes, guess which movie they're from. You have 60 seconds.</p>
+                
+                <button type="button" class="btn btn-dark btn-lg mb-3 border border-warning" id="start">START</button>
+      
+        </div> 
+        <div id="gameContainer">
+          
+                <h1 id="time"></h1>
+             <br>       
+            <!-- Game Question -->
+            <h5>1. "Nobody puts Baby in a corner!" </h5>
+            
+            <!-- Dirty Dancing  -->
+             <div class="answer1">  
+                <input type="radio" name="q1" value=" Point Break "> Point Break 
+                 <input type="radio" name="q1" value=" Road House "> Road House
+                <input type="radio" name="q1" value=" Dirty Dancing "> Dirty Dancing
+                <input type="radio" name="q1" value=" Forever Lulu "> Forever Lulu
+           </div>
+            <br>
+            
+            <h5>2. "Ditto"</h5>
+            
+            <!-- Ghost -->
+            <div class="answer2">  
+                <input type="radio" name="q2" value=" Next of Kin "> Next of Kin
+                <input type="radio" name="q2" value=" The Outsiders "> The Outsiders
+                <input type="radio" name="q2" value=" Ghost "> Ghost
+                <input type="radio" name="q2" value=" The Player "> The Player
+            </div>
+            <br>
+            
+            <h5>3. "Adios, Amigo!" </h5>
+            
+            <!-- Point Break -->
+            <div class="answer3">  
+                <input type="radio" name="q3" value=" Point Break "> Point Break
+                <input type="radio" name="q3" value=" Road House "> Road House
+                <input type="radio" name="q3" value=" Young Blood "> Young Blood
+                <input type="radio" name="q3" value=" Steel Dawn "> Steel Dawn
+            </div>
+           <br>
+            
+            <h5>4. "I want you to be nice...until it's time to not be nice."</h5>
+           
+            <!-- Road House -->
+            <div class="answer4">  
+                <input type="radio" name="q4" value=" Next of Kin "> Next of Kin
+                <input type="radio" name="q4" value=" Black Dog "> Black Dog
+                <input type="radio" name="q4" value=" Road House "> Road House
+                <input type="radio" name="q4" value=" Letters from a Killer "> Letters from a Killer
+            
+            </div>
+           <br>
+           
+             <h5>5. "Some men need to be hit back."</h5>
+            
+            <!-- To Fong Wu -->
+            <div class="answer5">  
+                <input type="radio" name="q5" value=" Green Dragon "> Green Dragon
+                <input type="radio" name="q5" value=" To Wong Fu ">  To Wong Fu
+                <input type="radio" name="q5" value=" Waking up in Reno "> Waking up in Reno
+                <input type="radio" name="q5" value=" One Last Dance "> One Last Dance
+            </div>
+            <br>
+                       
+            <h5>6. "Pain don't Hurt"</h5>
+           
+            <!-- Road House  -->
+            <div class="answer6">     
+                <input type="radio" name="q6" value=" Letters from a Killer "> Letters from a Killer
+                <input type="radio" name="q6" value=" Donnie Darko ">  Donnie Darko
+                <input type="radio" name="q6" value=" Road House "> Road House
+                <input type="radio" name="q6" value=" Keeping Mum "> Keeping Mum
+            </div>
+           
+       
+         <button type="button" class="btn btn-dark btn-lg mt-4 mb-3 border border-warning" id="Done">Done</button>
+                  
+        </div>
+               
+    
+        
+        <div id="lastContainer">                
+            <!-- <br> -->
+            <div id="alldone"><h2>Thanks for playing!</h2></div> <br>    
+            <div id="correctAnswer"><h3>Correct Answer :</h3></div> <br>
+            <div id="WrongAnswer"><h3>Wrong Answer :</h3></div> <br>
+            <div id="notAnswered"><h3>Not Answered :</h3></div><br>
+            
+
+            
+           <button type="button" class="btn btn-dark btn-lg mb-3 mt-3 border border-warning" id="Start-over">Start Over</button>
+        </div>
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+    </body>
+
+</html>
+
