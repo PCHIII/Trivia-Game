@@ -143,7 +143,6 @@ $(document).ready(function () {
         $("#correctAnswer").html("Correct Answer: " + correctAnswer);
         $("#WrongAnswer").html("Wrong Answer: " + wrongAnswer);
         $("#notAnswered").html("Not Answered: " + notAnswered);
-
         $("#lastContainer").show();
 
     }
