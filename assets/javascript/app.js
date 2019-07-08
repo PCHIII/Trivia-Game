@@ -9,9 +9,7 @@ $(document).ready(function () {
 
     $("#gameContainer").hide();
     $("#lastContainer").hide();
-
-    //$("#start").on("click", function(event) {
-
+   
     $("#start").on("click", function () {
 
         //after on click function need the start container Hide and Mid container Show
@@ -38,8 +36,7 @@ $(document).ready(function () {
         $("#Done").on("click", function () {
 
             numCount = 0;
-            // return;
-
+         
         });
 
         //finish the game after the timer reaches 0
@@ -77,82 +74,76 @@ $(document).ready(function () {
 
             correctAnswer++;
 
-        } else if (Q1 == undefined) {
-            notAnswered++;
-        } else {
-            wrongAnswer++;
-        }
+                } else if (Q1 == undefined) {
+                    notAnswered++;
+                } else {
+                    wrongAnswer++;
+                }
+
+                if (Q2 == " Ghost ") {
+
+                    correctAnswer++;
+
+                } else if (Q2 == undefined) {
+                    notAnswered++;
+                } else {
+                    wrongAnswer++;
+                }
+
+                if (Q3 == " Point Break ") {
+
+                    correctAnswer++;
+
+                } else if (Q3 == undefined) {
+                    notAnswered++;
+                } else {
+                    wrongAnswer++;
+                }
+
+                if (Q4 == " Road House ") {
+
+                    correctAnswer++;
+
+                } else if (Q4 == undefined) {
+                    notAnswered++;
+                } else {
+                    wrongAnswer++;
+                }
+
+                if (Q5 == " To Wong Fu ") {
+
+                    correctAnswer++;
+
+                } else if (Q5 == undefined) {
+                    notAnswered++;
+                } else {
+                    wrongAnswer++;
+                }
 
 
-        if (Q2 == " Ghost ") {
+                if (Q6 == " Road House ") {
 
-            correctAnswer++;
+                    correctAnswer++;
 
-        } else if (Q2 == undefined) {
-            notAnswered++;
-        } else {
-            wrongAnswer++;
-        }
-
-
-        if (Q3 == " Point Break ") {
-
-            correctAnswer++;
-
-        } else if (Q3 == undefined) {
-            notAnswered++;
-        } else {
-            wrongAnswer++;
-        }
-
-
-        if (Q4 == " Road House ") {
-
-            correctAnswer++;
-
-        } else if (Q4 == undefined) {
-            notAnswered++;
-        } else {
-            wrongAnswer++;
-        }
-
-
-        if (Q5 == " To Wong Fu ") {
-
-            correctAnswer++;
-
-        } else if (Q5 == undefined) {
-            notAnswered++;
-        } else {
-            wrongAnswer++;
-        }
-
-
-        if (Q6 == " Road House ") {
-
-            correctAnswer++;
-
-        } else if (Q6 == undefined) {
-            notAnswered++;
-        } else {
-            wrongAnswer++;
-        }
+                } else if (Q6 == undefined) {
+                    notAnswered++;
+                } else {
+                    wrongAnswer++;
+                }
 
         //after answer are validated, display the score results
 
-        $("#correctAnswer").html("Correct Answer: " + correctAnswer);
-        $("#WrongAnswer").html("Wrong Answer: " + wrongAnswer);
-        $("#notAnswered").html("Not Answered: " + notAnswered);
-        $("#lastContainer").show();
+            $("#correctAnswer").html("Correct Answer: " + correctAnswer);
+            $("#WrongAnswer").html("Wrong Answer: " + wrongAnswer);
+            $("#notAnswered").html("Not Answered: " + notAnswered);
+            $("#lastContainer").show();
 
     }
 
     $("#Start-over").on("click", function () {
 
-        // Location relod
         location.reload();
 
     });
-
 
 });
